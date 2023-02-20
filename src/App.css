@@ -1,0 +1,93 @@
+:root {
+	--light:				#FFFFFF;
+
+	--color:				#46424b;
+
+	--border:				#bbc8ff;
+	--border-hover:			#6481ff;
+
+	--button-hover:			#d3d8fd;
+}
+
+body {
+	font-size: 14px;
+	color: var(--color);
+	font-family: cursive;
+}
+
+* {
+	transition: background ease-in-out .2s,
+					border ease-in-out .2s,
+}
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 400px;
+	padding: 50px 0;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+label {
+	display: block;
+	width: 100%;
+}
+
+input {
+	width: 100%;
+	padding: 10px 10px;
+	font-family: inherit;
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	font-size: 1em;
+	color: var(--color);
+	outline: none;
+}
+
+input:hover, input:active {
+	border: 1px solid var(--border-hover);
+}
+
+textarea {
+	width: 100%;
+	padding: 10px 10px;
+	font-family: inherit;
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	font-size: 1em;
+	color: var(--color);
+	outline: none;
+	resize: vertical;
+}
+
+textarea:hover, textarea:active {
+	border: 1px solid var(--border-hover);
+}
+
+button {
+	padding: 10px 10px;
+	background: var(--light);
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 1em;
+	color: var(--color);
+	cursor: pointer;
+}
+
+button:hover, button:active {
+	background: var(--button-hover);
+	border: 1px solid var(--border-hover);
+}
